@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset  */
+    body {
+        color: white;
+        margin: 0px;
+        padding: opx;
+        background: url('img/chachi.jpg');
+        background-repeat: no-repeat;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Oswald', sans-serif;
+    }
+
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        line-height: 40%;
+    }
+
+    .left:hover {
+        color: grey;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 12px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 10px;
+    }
+
+    .navbar li a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .left img {
+        width: 55px;
+        filter: invert();
+        padding: auto;
+        padding-left: 22%;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 8px 14px;
+        border: 2px solid grey;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 116px 45px;
+        padding: 67px 76px;
+        width: 33%;
+        border-radius: 20px;
+        
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .container button {
+        display: block;
+        width: 30%;
+        margin: 20px auto;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 306px;
+        padding: 6px;
+        margin: 12px auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Oswald', sans-serif;
+    }
+    .left img:hover{
+        color: grey;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header">
+            <!-- for logo  -->
+            <div class="left">
+                <img src="img/dumbell.jpg" alt="">
+                <div>Samarth Fitness</div>
+            </div>
+            <!-- for navigation  -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#">HOME<a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">FITNESS CALCULATOR</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <!-- for buttons  -->
+            <div class="right">
+                <button class="btn">
+                    call us now
+                </button>
+                <button class="btn">
+                    email us
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Aao Body banvate ha tumhari
+        </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <button class="btn" id="Submit">
+                Submit
+            </button>
+        </form>
+
+    </div>
+</body>
+
+</html>
